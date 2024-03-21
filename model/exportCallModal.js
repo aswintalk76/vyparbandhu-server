@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const loginSchema = new mongoose.Schema({
+const expertSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -14,16 +14,12 @@ const loginSchema = new mongoose.Schema({
         required: true
     },
   
-    password: {
+    detail: {
         type: String,
-        required: true
     },
-    documents: [{
-        image:String,
-        name: String
-    }],
+ 
 });
 
-const LoginModal = mongoose.model('Login', loginSchema);
+const ExpertCallModal = mongoose.model('ExpertCall', expertSchema);
 
-module.exports = LoginModal;
+module.exports = ExpertCallModal;

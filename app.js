@@ -23,6 +23,8 @@ const serviceroutes = require('./routes/serviceController')
 const loginroutes = require('./routes/loginController')
 const blogroutes = require('./routes/blogController')
 const contactroutes = require('./routes/contactController')
+const homeroutes = require('./routes/homepageController')
+const orderroutes = require('./routes/orderController')
 
 
 app.use('/admin/templates', templatesroutes);
@@ -32,6 +34,8 @@ app.use('/admin/service', serviceroutes);
 app.use('/admin/', loginroutes);
 app.use('/admin/blog', blogroutes);
 app.use('/admin/', contactroutes);
+app.use('/admin/home', homeroutes);
+app.use('/admin/order', orderroutes);
 
 
 

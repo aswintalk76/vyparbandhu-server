@@ -16,8 +16,8 @@ const contactSchema = new mongoose.Schema({
   
     doubt: {
         type: String,
-    },
- 
+        
+    },  
 });
 
 const ConatctUsCallModal = mongoose.model('ContactUS', contactSchema);
